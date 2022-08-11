@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="" type="media" href="#">
+    <title>Print Invoice</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <div id="formSection" class="formSection">
+                <form action="#" id="form" autocomplete="on">
+                    <div class="w100">
+                        <div class="inputwrapper w35">
+                            <label for="itemName">Item Name</label>
+                            <input type="text" id="itemName">
+                        </div>
+                        <div class="inputwrapper w10">
+                            <label for="q">x</label>
+                            <input type="number" id="q">
+                        </div>
+                        <div class="inputwrapper w35">
+                            <label for="itemPrice">Price (&dollar;)</label>
+                            <input type="text" id="itemPrice">
+                        </div>
+                        <div class="inputwrapper "></div>
+                        <div class="inputwarpper w20">
+                            <input type="submit" value="Submit" class="submit" id="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- print body-->
+            <div id="printarea" class="printArea">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="center">
+                    <h3 class="title">creek road</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ut quaerat voluptas!<br>
+                        https://www.tesco.com/store-locator
+                    </p>
+                </div>
+                <table id="accounting" class="accounting">
+                    <thead></thead>
+                    <tbody id="tbody">
+                        <!-- <tr id="list">
+                            <td class="item i">Food Item</td>
+                            <td class="item">&#x20AC;<span class="p">0.00</span></td>
+                        </tr> -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total:</td>
+                            <td>&dollar;<span id="total">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Cash:</td>
+                            <td >&dollar;<span id="cash">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>change due:</td>
+                            <td>&dollar;<span id="change" >00</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="center">
+                  <hr>
+                  <h2 class="title2">Club Card Today</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur. <br>
+                    Lorem, ipsum dolor. <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing. <br>
+                    Lorem ipsum, dolor sit amet.
+                  </p>
+                  <hr>
+                </div>
+                <div class="center p20">
+                  <img src="https://barcode.tec-it.com/barcode.ashx?data=90000-5000-00008%0A90000-5001-23658%0A90000-5002-47308%0A90000-5003-70958%0A90000-5004-94608%0A90000-5006-18258%0A90000-5007-41908%0A90000-5008-65558%0A90000-5009-89208%0A90000-5011-12858&code=Code128&multiplebarcodes=true&translate-esc=true" alt=""><br>
+                  <div class="m10"></div>
+                  <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet. <br>
+                    Lorem ipsum dolor, sit amet consectetur, adipisicing.
+                  </p>
+                  <p class="p20">
+                    <span id="date">00/00/00</span>&nbsp;|&nbsp;<span id="time">00:00</span>&nbsp;|&nbsp;<span id="phone">0000 000 0000 0000</span>
+                  </p><br>
+                  <p>&copy; <span id="year">0000</span>, All right reserved. <a href="https://wa.me/01700539061" target="_blank" title="Sujon Mir || WhatsApp Number">Sujon Mir</a></p>
+                  <a href="fb.me/mhk.sujon.3" class="link">
+                     <img src="./images/facebook.webp" alt="Facebook" width="20" title="Facebook">
+                  </a>&nbsp;&nbsp;
+                  <a href="https://github.com/sujonmir" class="link">
+                    <img src="./images/github.png" alt="GitHub" width="20" title="GitHub">
+                  </a>&nbsp;&nbsp;
+                  <a href="mailto:sujonmhk786@gmail.com?subject=From Invoice Page&cc=admin@sahalit.com" class="link">
+                    <img src="./images/gmail.webp" alt="Gmail" width="20" title="Gmail">
+                  </a>&nbsp;&nbsp;
+                  <a href="https://www.linkedin.com/in/sujonmir/" class="link">
+                    <img src="./images/linkedin.png" alt="linkendIn" width="20" title="linkendIn">
+                  </a>&nbsp;&nbsp;
+                  <a href="tel:+8801700539061" class="link">
+                    <img src="./images/phone.png" alt="Phone Number" width="20" title="Phone Number">
+                  </a>&nbsp;&nbsp;
+                </div>
+            </div>
+            <!-- print button -->
+            <div class="printBtnWrapper" id="printBtnWrapper">
+                <button id="final">Print <span class="printerIcon">&#x1F5B6;</span></button>
+                <!-- <button onclick="window.print();return false;" id="final">Print <span class="printerIcon">&#x1F5B6;</span></button> -->
+            </div>
+        </div>
+    </div>
+    <script src="../dist/bundle.js"></script>
+<script defer src="bundle.js"></script></body>
+
+</html>

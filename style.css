@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@media print {
+
+    #printBtnWrapper,
+    #formSection {
+        display: none;
+    }
+
+    #printarea {
+        display: block !important;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+    body {
+        /*padding-top: 72px;*/
+        /*padding-bottom: 72px;*/
+        /*margin: auto;*/
+    }
+}
+
+/*common start*/
+.center {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background: #000;
+}
+
+.p10 {
+    padding-top: 10px;
+}
+
+.p20 {
+    padding-top: 20px;
+}
+
+.p30 {
+    padding-top: 30px;
+}
+
+.p40 {
+    padding-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    margin-top: -20px;
+}
+
+.m10 {
+    margin-top: -10px;
+}
+
+.m20 {
+    margin-top: -20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*common end*/
+body {
+    /*overflow: hidden;*/
+    height: auto;
+    font-family: lato;
+}
+
+.container {}
+
+/*input area start*/
+.formSection {
+    width: 60vw;
+    height: auto;
+    padding: 50px 20px 70px 20px !important;
+    margin: auto;
+    background: #D4DBE2;
+    margin-top: 50px;
+}
+
+.printBtnWrapper {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.printBtnWrapper button {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    box-sizing: border-box;
+    font-size: 36px;
+    background: #000000;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.printerIcon {}
+
+.inputwrapper {
+    display: block;
+    position: relative;
+}
+
+.inputwrapper label {
+    position: absolute;
+    top: -16px;
+    font-size: 14px;
+}
+
+.submit,
+.inputwrapper input {
+    outline: none;
+    padding: 5px 10px;
+    border: 2px dashed #ddd;
+    font-size: 18px;
+    color: #636363;
+}
+
+.submit {
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.w100 {
+    display: block;
+    width: 100% !important;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.w35 {
+    display: inline !important;
+    width: 35%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.w35 input {
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.w20 {
+    display: inline !important;
+    width: 20%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.w20 input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.w10 {
+    display: inline !important;
+    width: 10%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.w10 label {
+    left: 40%;
+}
+
+.w10 input {
+    width: 85%;
+    box-sizing: border-box;
+}
+
+/*input area end*/
+/*print area start*/
+.printArea {
+    width: 600px;
+    height: auto;
+    padding: 50px;
+    border: 1px solid #ddd;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.item {}
+
+.accounting {
+    text-transform: uppercase;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.accounting tr {
+    width: ;
+    display: block;
+}
+
+.accounting tr td:nth-child(1) {
+    width: 280px;
+}
+
+.accounting tfoot {
+    margin-top: 50px !important;
+    border-top: 2px dashed #ccc;
+    display: block;
+    padding-bottom: 20px;
+}
+
+table tbody tr td span::before {
+    content: '\0024';
+    display: inline-block;
+}
+
+.cash {
+    padding: 5px;
+    width: 30px;
+    float: right;
+}
+
+.cash input {
+    width: 50px;
+}
+
+/*print area end*/
+/*responsive start*/
+@media screen and(max-width:400) {
+    .inputwrapper{
+        width: 360px;
+    }
+}
+
+/*responsive start*/
